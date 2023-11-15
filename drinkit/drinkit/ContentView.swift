@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  drinkit
-//
-//  Created by Ivan Vislov on 15/11/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
