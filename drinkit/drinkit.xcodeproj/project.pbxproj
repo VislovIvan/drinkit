@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D21DD0A2B07BF50008469C0 /* InfiniteCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D21DD092B07BF50008469C0 /* InfiniteCarouselView.swift */; };
 		1D48D6EE2B05036C00890ECF /* drinkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D48D6ED2B05036C00890ECF /* drinkitApp.swift */; };
 		1D48D6F02B05036C00890ECF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D48D6EF2B05036C00890ECF /* ContentView.swift */; };
 		1D48D6F22B05036D00890ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D48D6F12B05036D00890ECF /* Assets.xcassets */; };
 		1D48D6F52B05036D00890ECF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D48D6F42B05036D00890ECF /* Preview Assets.xcassets */; };
+		1D676AE32B0506830039DF2B /* EveningOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D676AE22B0506830039DF2B /* EveningOfferView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D21DD092B07BF50008469C0 /* InfiniteCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCarouselView.swift; sourceTree = "<group>"; };
 		1D48D6EA2B05036C00890ECF /* drinkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drinkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D48D6ED2B05036C00890ECF /* drinkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinkitApp.swift; sourceTree = "<group>"; };
 		1D48D6EF2B05036C00890ECF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D48D6F12B05036D00890ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D48D6F42B05036D00890ECF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D676AE22B0506830039DF2B /* EveningOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningOfferView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				1D48D6ED2B05036C00890ECF /* drinkitApp.swift */,
 				1D48D6EF2B05036C00890ECF /* ContentView.swift */,
+				1D21DD092B07BF50008469C0 /* InfiniteCarouselView.swift */,
+				1D676AE22B0506830039DF2B /* EveningOfferView.swift */,
 				1D48D6F12B05036D00890ECF /* Assets.xcassets */,
 				1D48D6F32B05036D00890ECF /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D21DD0A2B07BF50008469C0 /* InfiniteCarouselView.swift in Sources */,
 				1D48D6F02B05036C00890ECF /* ContentView.swift in Sources */,
+				1D676AE32B0506830039DF2B /* EveningOfferView.swift in Sources */,
 				1D48D6EE2B05036C00890ECF /* drinkitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
