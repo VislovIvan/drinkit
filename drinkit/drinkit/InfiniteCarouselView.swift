@@ -1,10 +1,3 @@
-//
-//  InfiniteCarouselView.swift
-//  drinkit
-//
-//  Created by Ivan Vislov on 17/11/23.
-//
-
 import SwiftUI
 
 struct InfiniteCarouselView: View {

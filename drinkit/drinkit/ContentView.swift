@@ -4,52 +4,66 @@ struct ContentView: View {
     @State private var dragAmount = CGSize.zero
     @State private var scale = 1.1 // Начальный масштаб установлен на 110%
     @State private var isLoading = false // Состояние для индикатора загрузки
-
+    
     var body: some View {
-        VStack {
-            ZStack {
-                Image("testImage")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .blur(radius: blurRadius(for: dragAmount.height))
-                    .scaleEffect(scale)
-                    .edgesIgnoringSafeArea(.all)
-                EveningOfferView()
-                    .offset(y: dragAmount.height)
-
-                if isLoading {
+        
+        let screenWidth = UIScreen.main.bounds.width  // Получаем ширину экрана
+        
+        ScrollView(.horizontal, showsIndicators: false) {
+            LazyHStack(spacing: 0) {
+                ForEach(0..<5, id: \.self) { _ in
                     VStack {
-                        ProgressView() // Индикатор загрузки
-                            .progressViewStyle(CircularProgressViewStyle())
-                            .scaleEffect(1.5)
-                            .zIndex(1) // Повышение z-индекса, чтобы быть над всеми другими элементами
-                            .padding(.top, 50)
-                        Spacer()
+                        ZStack {
+                            Image("testImage")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .blur(radius: blurRadius(for: dragAmount.height))
+                                .scaleEffect(scale)
+                                .frame(width: screenWidth)
+                                .clipped()
+                            EveningOfferView()
+                                .offset(y: dragAmount.height)
+                            
+                            if isLoading {
+                                VStack {
+                                    ProgressView() // Индикатор загрузки
+                                        .progressViewStyle(CircularProgressViewStyle())
+                                        .scaleEffect(1.5)
+                                        .zIndex(1) // Повышение z-индекса, чтобы быть над всеми другими элементами
+                                        .padding(.top, 100)
+                                    Spacer()
+                                }
+                            }
+                        }
+                        .gesture(
+                            DragGesture()
+                                .onChanged { gesture in
+                                    self.dragAmount = gesture.translation
+                                    self.updateScale()
+                                    self.updateLoadingIndicator()
+                                    print("Перетаскивание изменено, Y: \(self.dragAmount.height)")
+                                }
+                                .onEnded { _ in
+                                    if self.dragAmount.height < -90 {
+                                        // "Магнитим" к отступу 90
+                                        self.dragAmount.height = -290
+                                    } else {
+                                        self.dragAmount = .zero
+                                    }
+                                    self.updateScale()
+                                    self.updateLoadingIndicator()
+                                    print("Перетаскивание завершено, Y: \(self.dragAmount.height)")
+                                }
+                        )
+                        .animation(.spring(duration: 0.4), value: dragAmount.height)
                     }
                 }
             }
-            .gesture(
-                DragGesture()
-                    .onChanged { gesture in
-                        self.dragAmount = gesture.translation
-                        self.updateScale()
-                        self.updateLoadingIndicator()
-                        print("Перетаскивание изменено, Y: \(self.dragAmount.height)")
-                    }
-                    .onEnded { _ in
-                        if self.dragAmount.height < -90 {
-                            // "Магнитим" к отступу 90
-                            self.dragAmount.height = -290
-                        } else {
-                            self.dragAmount = .zero
-                        }
-                        self.updateScale()
-                        self.updateLoadingIndicator()
-                        print("Перетаскивание завершено, Y: \(self.dragAmount.height)")
-                    }
-            )
-            .animation(.spring(duration: 0.4), value: dragAmount.height)
+            .scrollTargetLayout()
         }
+        .edgesIgnoringSafeArea(.all)
+        .scrollTargetBehavior(.viewAligned)
+        //        .safeAreaPadding(.horizontal, 40)
     }
     
     private func blurRadius(for dragHeight: CGFloat) -> CGFloat {
@@ -71,9 +85,13 @@ struct ContentView: View {
             scale = 1.1 + dragAmount.height / 3000
         }
     }
-
+    
     private func updateLoadingIndicator() {
         // Показывать индикатор загрузки, когда Y > 50
         isLoading = dragAmount.height > 50
     }
+}
+
+#Preview {
+    ContentView()
 }
