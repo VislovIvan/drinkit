@@ -15,6 +15,10 @@
 		1D48D6F22B05036D00890ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D48D6F12B05036D00890ECF /* Assets.xcassets */; };
 		1D48D6F52B05036D00890ECF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D48D6F42B05036D00890ECF /* Preview Assets.xcassets */; };
 		1D676AE32B0506830039DF2B /* EveningOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D676AE22B0506830039DF2B /* EveningOfferView.swift */; };
+		1DEF38392B0D09350072C7AC /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF38382B0D09350072C7AC /* Montserrat-Regular.ttf */; };
+		1DEF383C2B0D0A020072C7AC /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF383B2B0D0A020072C7AC /* Montserrat-SemiBold.ttf */; };
+		1DEF383E2B0D0A2B0072C7AC /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF383D2B0D0A2B0072C7AC /* Montserrat-Medium.ttf */; };
+		1DEF38402B0E3E370072C7AC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF383F2B0E3E370072C7AC /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,11 @@
 		1D48D6F12B05036D00890ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D48D6F42B05036D00890ECF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D676AE22B0506830039DF2B /* EveningOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningOfferView.swift; sourceTree = "<group>"; };
+		1DEF38382B0D09350072C7AC /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		1DEF383A2B0D09500072C7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1DEF383B2B0D0A020072C7AC /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		1DEF383D2B0D0A2B0072C7AC /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		1DEF383F2B0E3E370072C7AC /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +68,16 @@
 		1D48D6EC2B05036C00890ECF /* drinkit */ = {
 			isa = PBXGroup;
 			children = (
+				1DEF383A2B0D09500072C7AC /* Info.plist */,
 				1D48D6ED2B05036C00890ECF /* drinkitApp.swift */,
 				1D48D6EF2B05036C00890ECF /* ContentView.swift */,
 				1D21DD092B07BF50008469C0 /* InfiniteCarouselView.swift */,
 				1D676AE22B0506830039DF2B /* EveningOfferView.swift */,
 				1D1B54492B0B9D80008B75DF /* GIFImage.swift */,
+				1DEF383F2B0E3E370072C7AC /* SwiftUIView.swift */,
+				1DEF383D2B0D0A2B0072C7AC /* Montserrat-Medium.ttf */,
+				1DEF383B2B0D0A020072C7AC /* Montserrat-SemiBold.ttf */,
+				1DEF38382B0D09350072C7AC /* Montserrat-Regular.ttf */,
 				1D1B544B2B0B9EFF008B75DF /* bg_gif.gif */,
 				1D48D6F12B05036D00890ECF /* Assets.xcassets */,
 				1D48D6F32B05036D00890ECF /* Preview Content */,
@@ -137,9 +151,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DEF38392B0D09350072C7AC /* Montserrat-Regular.ttf in Resources */,
 				1D48D6F52B05036D00890ECF /* Preview Assets.xcassets in Resources */,
 				1D48D6F22B05036D00890ECF /* Assets.xcassets in Resources */,
 				1D1B544C2B0B9EFF008B75DF /* bg_gif.gif in Resources */,
+				1DEF383E2B0D0A2B0072C7AC /* Montserrat-Medium.ttf in Resources */,
+				1DEF383C2B0D0A020072C7AC /* Montserrat-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +169,7 @@
 			files = (
 				1D1B544A2B0B9D80008B75DF /* GIFImage.swift in Sources */,
 				1D21DD0A2B07BF50008469C0 /* InfiniteCarouselView.swift in Sources */,
+				1DEF38402B0E3E370072C7AC /* SwiftUIView.swift in Sources */,
 				1D48D6F02B05036C00890ECF /* ContentView.swift in Sources */,
 				1D676AE32B0506830039DF2B /* EveningOfferView.swift in Sources */,
 				1D48D6EE2B05036C00890ECF /* drinkitApp.swift in Sources */,
@@ -291,6 +309,7 @@
 				DEVELOPMENT_TEAM = 2XTS5VKE3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = drinkit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,6 +339,7 @@
 				DEVELOPMENT_TEAM = 2XTS5VKE3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = drinkit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
