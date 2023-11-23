@@ -35,7 +35,6 @@ struct BeverageOption: View {
                 Text(price)
                     .font(.custom("Montserrat-Medium", size: 20))
                     .padding(.top, 1)
-//                    .bold()
             }
             .foregroundColor(.white)
             .padding(.leading, 15)

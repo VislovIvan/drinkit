@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D1B544A2B0B9D80008B75DF /* GIFImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1B54492B0B9D80008B75DF /* GIFImage.swift */; };
-		1D1B544C2B0B9EFF008B75DF /* bg_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D1B544B2B0B9EFF008B75DF /* bg_gif.gif */; };
-		1D21DD0A2B07BF50008469C0 /* InfiniteCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D21DD092B07BF50008469C0 /* InfiniteCarouselView.swift */; };
 		1D48D6EE2B05036C00890ECF /* drinkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D48D6ED2B05036C00890ECF /* drinkitApp.swift */; };
 		1D48D6F02B05036C00890ECF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D48D6EF2B05036C00890ECF /* ContentView.swift */; };
 		1D48D6F22B05036D00890ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D48D6F12B05036D00890ECF /* Assets.xcassets */; };
@@ -18,13 +15,12 @@
 		1DEF38392B0D09350072C7AC /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF38382B0D09350072C7AC /* Montserrat-Regular.ttf */; };
 		1DEF383C2B0D0A020072C7AC /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF383B2B0D0A020072C7AC /* Montserrat-SemiBold.ttf */; };
 		1DEF383E2B0D0A2B0072C7AC /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF383D2B0D0A2B0072C7AC /* Montserrat-Medium.ttf */; };
-		1DEF38402B0E3E370072C7AC /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF383F2B0E3E370072C7AC /* SwiftUIView.swift */; };
+		1DEF38422B0F387B0072C7AC /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF38412B0F387B0072C7AC /* Drink.swift */; };
+		1DEF38442B0F38A10072C7AC /* DrinksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF38432B0F38A10072C7AC /* DrinksViewModel.swift */; };
+		1DEF38492B0F39180072C7AC /* DrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF38482B0F39180072C7AC /* DrinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1D1B54492B0B9D80008B75DF /* GIFImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImage.swift; sourceTree = "<group>"; };
-		1D1B544B2B0B9EFF008B75DF /* bg_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bg_gif.gif; sourceTree = "<group>"; };
-		1D21DD092B07BF50008469C0 /* InfiniteCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCarouselView.swift; sourceTree = "<group>"; };
 		1D48D6EA2B05036C00890ECF /* drinkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drinkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D48D6ED2B05036C00890ECF /* drinkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinkitApp.swift; sourceTree = "<group>"; };
 		1D48D6EF2B05036C00890ECF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,7 +31,9 @@
 		1DEF383A2B0D09500072C7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1DEF383B2B0D0A020072C7AC /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		1DEF383D2B0D0A2B0072C7AC /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
-		1DEF383F2B0E3E370072C7AC /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		1DEF38412B0F387B0072C7AC /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		1DEF38432B0F38A10072C7AC /* DrinksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewModel.swift; sourceTree = "<group>"; };
+		1DEF38482B0F39180072C7AC /* DrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,14 +69,10 @@
 				1DEF383A2B0D09500072C7AC /* Info.plist */,
 				1D48D6ED2B05036C00890ECF /* drinkitApp.swift */,
 				1D48D6EF2B05036C00890ECF /* ContentView.swift */,
-				1D21DD092B07BF50008469C0 /* InfiniteCarouselView.swift */,
-				1D676AE22B0506830039DF2B /* EveningOfferView.swift */,
-				1D1B54492B0B9D80008B75DF /* GIFImage.swift */,
-				1DEF383F2B0E3E370072C7AC /* SwiftUIView.swift */,
-				1DEF383D2B0D0A2B0072C7AC /* Montserrat-Medium.ttf */,
-				1DEF383B2B0D0A020072C7AC /* Montserrat-SemiBold.ttf */,
-				1DEF38382B0D09350072C7AC /* Montserrat-Regular.ttf */,
-				1D1B544B2B0B9EFF008B75DF /* bg_gif.gif */,
+				1DEF38472B0F38D30072C7AC /* View */,
+				1DEF38462B0F38C00072C7AC /* ViewModel */,
+				1DEF38452B0F38BB0072C7AC /* Model */,
+				1DEF384A2B0F3A9A0072C7AC /* Fonts */,
 				1D48D6F12B05036D00890ECF /* Assets.xcassets */,
 				1D48D6F32B05036D00890ECF /* Preview Content */,
 			);
@@ -91,6 +85,41 @@
 				1D48D6F42B05036D00890ECF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DEF38452B0F38BB0072C7AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF38412B0F387B0072C7AC /* Drink.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DEF38462B0F38C00072C7AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF38432B0F38A10072C7AC /* DrinksViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1DEF38472B0F38D30072C7AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF38482B0F39180072C7AC /* DrinkView.swift */,
+				1D676AE22B0506830039DF2B /* EveningOfferView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DEF384A2B0F3A9A0072C7AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF383D2B0D0A2B0072C7AC /* Montserrat-Medium.ttf */,
+				1DEF38382B0D09350072C7AC /* Montserrat-Regular.ttf */,
+				1DEF383B2B0D0A020072C7AC /* Montserrat-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +183,6 @@
 				1DEF38392B0D09350072C7AC /* Montserrat-Regular.ttf in Resources */,
 				1D48D6F52B05036D00890ECF /* Preview Assets.xcassets in Resources */,
 				1D48D6F22B05036D00890ECF /* Assets.xcassets in Resources */,
-				1D1B544C2B0B9EFF008B75DF /* bg_gif.gif in Resources */,
 				1DEF383E2B0D0A2B0072C7AC /* Montserrat-Medium.ttf in Resources */,
 				1DEF383C2B0D0A020072C7AC /* Montserrat-SemiBold.ttf in Resources */,
 			);
@@ -167,12 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D1B544A2B0B9D80008B75DF /* GIFImage.swift in Sources */,
-				1D21DD0A2B07BF50008469C0 /* InfiniteCarouselView.swift in Sources */,
-				1DEF38402B0E3E370072C7AC /* SwiftUIView.swift in Sources */,
 				1D48D6F02B05036C00890ECF /* ContentView.swift in Sources */,
 				1D676AE32B0506830039DF2B /* EveningOfferView.swift in Sources */,
+				1DEF38422B0F387B0072C7AC /* Drink.swift in Sources */,
+				1DEF38492B0F39180072C7AC /* DrinkView.swift in Sources */,
 				1D48D6EE2B05036C00890ECF /* drinkitApp.swift in Sources */,
+				1DEF38442B0F38A10072C7AC /* DrinksViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
