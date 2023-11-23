@@ -1,6 +1,6 @@
 import SwiftUI
 
-class DrinksViewModel: ObservableObject {
+class DrinkViewModel: ObservableObject {
     @Published var drinks: [Drink] = []
 
     init() {

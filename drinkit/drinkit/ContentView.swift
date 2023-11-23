@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var viewModel = DrinksViewModel()
+    @ObservedObject var viewModel = DrinkViewModel()
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {

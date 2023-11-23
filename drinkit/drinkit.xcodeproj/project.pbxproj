@@ -16,7 +16,7 @@
 		1DEF383C2B0D0A020072C7AC /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF383B2B0D0A020072C7AC /* Montserrat-SemiBold.ttf */; };
 		1DEF383E2B0D0A2B0072C7AC /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF383D2B0D0A2B0072C7AC /* Montserrat-Medium.ttf */; };
 		1DEF38422B0F387B0072C7AC /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF38412B0F387B0072C7AC /* Drink.swift */; };
-		1DEF38442B0F38A10072C7AC /* DrinksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF38432B0F38A10072C7AC /* DrinksViewModel.swift */; };
+		1DEF38442B0F38A10072C7AC /* DrinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF38432B0F38A10072C7AC /* DrinkViewModel.swift */; };
 		1DEF38492B0F39180072C7AC /* DrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF38482B0F39180072C7AC /* DrinkView.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		1DEF383B2B0D0A020072C7AC /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		1DEF383D2B0D0A2B0072C7AC /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		1DEF38412B0F387B0072C7AC /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
-		1DEF38432B0F38A10072C7AC /* DrinksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewModel.swift; sourceTree = "<group>"; };
+		1DEF38432B0F38A10072C7AC /* DrinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewModel.swift; sourceTree = "<group>"; };
 		1DEF38482B0F39180072C7AC /* DrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +98,7 @@
 		1DEF38462B0F38C00072C7AC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				1DEF38432B0F38A10072C7AC /* DrinksViewModel.swift */,
+				1DEF38432B0F38A10072C7AC /* DrinkViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 				1DEF38422B0F387B0072C7AC /* Drink.swift in Sources */,
 				1DEF38492B0F39180072C7AC /* DrinkView.swift in Sources */,
 				1D48D6EE2B05036C00890ECF /* drinkitApp.swift in Sources */,
-				1DEF38442B0F38A10072C7AC /* DrinksViewModel.swift in Sources */,
+				1DEF38442B0F38A10072C7AC /* DrinkViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,11 +338,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = drinkit/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,9 +350,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vislov.ivan.drinkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -368,11 +371,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = drinkit/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,9 +383,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vislov.ivan.drinkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
