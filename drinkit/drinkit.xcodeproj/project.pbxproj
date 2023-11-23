@@ -11,6 +11,14 @@
 		1D48D6F02B05036C00890ECF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D48D6EF2B05036C00890ECF /* ContentView.swift */; };
 		1D48D6F22B05036D00890ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D48D6F12B05036D00890ECF /* Assets.xcassets */; };
 		1D48D6F52B05036D00890ECF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D48D6F42B05036D00890ECF /* Preview Assets.xcassets */; };
+		1D676AE32B0506830039DF2B /* EveningOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D676AE22B0506830039DF2B /* EveningOfferView.swift */; };
+		1DC338A02B0F9053006B0218 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3389F2B0F9053006B0218 /* DesignSystem.swift */; };
+		1DEF38392B0D09350072C7AC /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF38382B0D09350072C7AC /* Montserrat-Regular.ttf */; };
+		1DEF383C2B0D0A020072C7AC /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF383B2B0D0A020072C7AC /* Montserrat-SemiBold.ttf */; };
+		1DEF383E2B0D0A2B0072C7AC /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF383D2B0D0A2B0072C7AC /* Montserrat-Medium.ttf */; };
+		1DEF38422B0F387B0072C7AC /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF38412B0F387B0072C7AC /* Drink.swift */; };
+		1DEF38442B0F38A10072C7AC /* DrinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF38432B0F38A10072C7AC /* DrinkViewModel.swift */; };
+		1DEF38492B0F39180072C7AC /* DrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF38482B0F39180072C7AC /* DrinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,15 @@
 		1D48D6EF2B05036C00890ECF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D48D6F12B05036D00890ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D48D6F42B05036D00890ECF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D676AE22B0506830039DF2B /* EveningOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningOfferView.swift; sourceTree = "<group>"; };
+		1DC3389F2B0F9053006B0218 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		1DEF38382B0D09350072C7AC /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		1DEF383A2B0D09500072C7AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1DEF383B2B0D0A020072C7AC /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		1DEF383D2B0D0A2B0072C7AC /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		1DEF38412B0F387B0072C7AC /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		1DEF38432B0F38A10072C7AC /* DrinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewModel.swift; sourceTree = "<group>"; };
+		1DEF38482B0F39180072C7AC /* DrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +68,14 @@
 		1D48D6EC2B05036C00890ECF /* drinkit */ = {
 			isa = PBXGroup;
 			children = (
+				1DEF383A2B0D09500072C7AC /* Info.plist */,
 				1D48D6ED2B05036C00890ECF /* drinkitApp.swift */,
 				1D48D6EF2B05036C00890ECF /* ContentView.swift */,
+				1DEF38472B0F38D30072C7AC /* View */,
+				1DEF38462B0F38C00072C7AC /* ViewModel */,
+				1DEF38452B0F38BB0072C7AC /* Model */,
+				1DC3389E2B0F9044006B0218 /* DesignSystem */,
+				1DEF384A2B0F3A9A0072C7AC /* Fonts */,
 				1D48D6F12B05036D00890ECF /* Assets.xcassets */,
 				1D48D6F32B05036D00890ECF /* Preview Content */,
 			);
@@ -65,6 +88,49 @@
 				1D48D6F42B05036D00890ECF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DC3389E2B0F9044006B0218 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				1DC3389F2B0F9053006B0218 /* DesignSystem.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		1DEF38452B0F38BB0072C7AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF38412B0F387B0072C7AC /* Drink.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DEF38462B0F38C00072C7AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF38432B0F38A10072C7AC /* DrinkViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1DEF38472B0F38D30072C7AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF38482B0F39180072C7AC /* DrinkView.swift */,
+				1D676AE22B0506830039DF2B /* EveningOfferView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DEF384A2B0F3A9A0072C7AC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF383D2B0D0A2B0072C7AC /* Montserrat-Medium.ttf */,
+				1DEF38382B0D09350072C7AC /* Montserrat-Regular.ttf */,
+				1DEF383B2B0D0A020072C7AC /* Montserrat-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +191,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DEF38392B0D09350072C7AC /* Montserrat-Regular.ttf in Resources */,
 				1D48D6F52B05036D00890ECF /* Preview Assets.xcassets in Resources */,
 				1D48D6F22B05036D00890ECF /* Assets.xcassets in Resources */,
+				1DEF383E2B0D0A2B0072C7AC /* Montserrat-Medium.ttf in Resources */,
+				1DEF383C2B0D0A020072C7AC /* Montserrat-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +207,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D48D6F02B05036C00890ECF /* ContentView.swift in Sources */,
+				1D676AE32B0506830039DF2B /* EveningOfferView.swift in Sources */,
+				1DEF38422B0F387B0072C7AC /* Drink.swift in Sources */,
+				1DEF38492B0F39180072C7AC /* DrinkView.swift in Sources */,
+				1DC338A02B0F9053006B0218 /* DesignSystem.swift in Sources */,
 				1D48D6EE2B05036C00890ECF /* drinkitApp.swift in Sources */,
+				1DEF38442B0F38A10072C7AC /* DrinkViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +349,12 @@
 				DEVELOPMENT_TEAM = 2XTS5VKE3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = drinkit/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +362,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vislov.ivan.drinkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,11 +382,12 @@
 				DEVELOPMENT_TEAM = 2XTS5VKE3A;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = drinkit/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +395,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vislov.ivan.drinkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

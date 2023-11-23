@@ -1,21 +1,20 @@
-//
-//  ContentView.swift
-//  drinkit
-//
-//  Created by Ivan Vislov on 15/11/23.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel = DrinkViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 0) {
+                ForEach(viewModel.drinks, id: \.name) { drink in
+                    DrinkView(drink: drink)
+                }
+            }
+            .scrollTargetLayout()
         }
-        .padding()
+        .scrollTargetBehavior(.viewAligned)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
