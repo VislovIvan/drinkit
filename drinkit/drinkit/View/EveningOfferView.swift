@@ -8,8 +8,13 @@ struct EveningOfferView: View {
                 .foregroundStyle(.white)
             
             HStack(spacing: 20) {
-                BeverageOption(name: "Сocoa", price: "1.7 €", image: "Cocoa Evening Offer")
-                BeverageOption(name: "Matcha Latte", price: "1.9 € ", image: "Matcha Latte Evening Offer")
+                Button(action: { }) {
+                    BeverageOption(name: "Сocoa", price: "1.7 €", image: "Cocoa Evening Offer")
+                }
+                
+                Button(action: { }) {
+                    BeverageOption(name: "Matcha Latte", price: "1.9 € ", image: "Matcha Latte Evening Offer")
+                }
             }
         }
     }

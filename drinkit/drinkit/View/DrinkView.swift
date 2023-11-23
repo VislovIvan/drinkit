@@ -19,15 +19,19 @@ struct DrinkView: View {
                     .overlay(Color.black.opacity(darknessOpacity(for: dragAmount.height)))
                     .edgesIgnoringSafeArea(.all)
                     .clipped()
+                    .accessibilityHidden(true)
                 VStack(alignment: .leading) {
                     Spacer()
                     Text(drink.name)
                         .font(DesignSystem.Fonts.montserratMedium(size: 26))
                         .foregroundColor(.black)
-                    
                     HStack(spacing: 20) {
-                        priceButton
-                        tasteButton
+                        Button(action: { }) {
+                            priceButton
+                        }
+                        Button(action: { }) {
+                            tasteButton
+                        }
                     }
                 }
                 .padding(.horizontal, 15)
