@@ -4,9 +4,9 @@ struct EveningOfferView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("evening offer")
-                .font(.custom("Montserrat-SemiBold", size: 22))
+                .font(DesignSystem.Fonts.montserratSemiBold(size: 22))
                 .foregroundStyle(.white)
-
+            
             HStack(spacing: 20) {
                 BeverageOption(name: "Сocoa", price: "1.7 €", image: "Cocoa Evening Offer")
                 BeverageOption(name: "Matcha Latte", price: "1.9 € ", image: "Matcha Latte Evening Offer")
@@ -19,7 +19,7 @@ struct BeverageOption: View {
     var name: String
     var price: String
     var image: String
-
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
             Image(image)
@@ -29,11 +29,11 @@ struct BeverageOption: View {
                 .padding(.top, 20)
             VStack(alignment: .leading, spacing: 25) {
                 Text(name)
-                    .font(.custom("Montserrat-Medium", size: 18))
+                    .font(DesignSystem.Fonts.montserratMedium(size: 18))
                     .padding(.top, 5)
                 
                 Text(price)
-                    .font(.custom("Montserrat-Medium", size: 20))
+                    .font(DesignSystem.Fonts.montserratMedium(size: 20))
                     .padding(.top, 1)
             }
             .foregroundColor(.white)

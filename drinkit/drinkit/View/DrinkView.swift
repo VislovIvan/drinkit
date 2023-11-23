@@ -22,7 +22,7 @@ struct DrinkView: View {
                 VStack(alignment: .leading) {
                     Spacer()
                     Text(drink.name)
-                        .font(.custom("Montserrat-Medium", size: 26))
+                        .font(DesignSystem.Fonts.montserratMedium(size: 26))
                         .foregroundColor(.black)
                     
                     HStack(spacing: 20) {
@@ -56,6 +56,8 @@ struct DrinkView: View {
                         self.dragAmount = gesture.translation
                         self.updateScale()
                         self.updateLoadingIndicator()
+                        
+                        // degub
                         print("Start Y: \(self.dragAmount.height)")
                     }
                     .onEnded { _ in
@@ -66,6 +68,8 @@ struct DrinkView: View {
                         }
                         self.updateScale()
                         self.updateLoadingIndicator()
+                        
+                        // degub
                         print("End Y: \(self.dragAmount.height)")
                     }
             )
@@ -84,7 +88,7 @@ struct DrinkView: View {
                     .font(.system(size: 24))
                     .bold()
                 Text("\(drink.price, specifier: "%.2f") €")
-                    .font(.custom("Montserrat-Medium", size: 24))
+                    .font(DesignSystem.Fonts.montserratMedium(size: 24))
             }
         }
     }
@@ -100,7 +104,7 @@ struct DrinkView: View {
                     .font(.system(size: 22))
                     .bold()
                 Text("taste")
-                    .font(.custom("Montserrat-Medium", size: 20))
+                    .font(DesignSystem.Fonts.montserratMedium(size: 20))
             }
         }
     }
